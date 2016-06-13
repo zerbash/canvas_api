@@ -1,0 +1,4 @@
+services:
+  canvas_api.client:
+     class: Drupal\canvas_api\CanvasClient
+     arguments: ['@http_client_factory','@config.factory']
