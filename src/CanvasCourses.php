@@ -44,7 +44,7 @@ class CanvasCourses extends Canvas {
     $this->path = "accounts/$rootAccountID/courses";
     return $this->post();
   }
-  
+
   /**
    * Get a Canvas course
    *
@@ -72,7 +72,7 @@ class CanvasCourses extends Canvas {
    *    $canvas_api = new \Drupal\canvas_api\CanvasCourses;
    *    $courseID = 4542;
    *    $canvas_api->params = array(
-   *      'course = array(
+   *      'course' => array(
    *        'name' => 'My Updated Course Name',
    *      ),
    *    );
@@ -134,7 +134,7 @@ class CanvasCourses extends Canvas {
    * List users in a Canvas course
    *
    * See @link https://canvas.instructure.com/doc/api/courses.html#method.courses.users @endlink
-   * 
+   *
    * Example:
    *    $canvas_api = new \Drupal\canvas_api\CanvasCourses;
    *    $courseID = 3472;

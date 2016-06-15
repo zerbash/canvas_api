@@ -76,8 +76,9 @@ class CanvasEnrollment extends Canvas {
    * Example:
    *    $canvas_api = new \Drupal\canvas_api\CanvasEnrollment;
    *    $courseID = 4543;
+   *    $enrollmentID = 149850;
    *    $canvas_api->params['task'] = 'delete'; // Defaults to 'conclude'
-   *    $course = $canvas_api->deleteEnrollment($courseID);
+   *    $enrollment = $canvas_api->deleteEnrollment($courseID,$enrollmentID);
    *
    * @param $courseID
    * @param $enrollmentID
